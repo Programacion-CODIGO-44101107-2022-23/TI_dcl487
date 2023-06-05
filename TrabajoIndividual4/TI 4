@@ -1,0 +1,44 @@
+#include <stdio.h>
+
+int main() {
+
+    //Declaración de variables
+    float a1, b1, c1, d1;  // Coeficientes de la primera ecuación
+    float a2, b2, c2, d2;  // Coeficientes de la segunda ecuación
+    float a3, b3, c3, d3;  // Coeficientes de la tercera ecuación
+    float det, det_x, det_y, det_z;  // Determinantes para resolver el sistema
+    float x, y, z;  // Soluciones del sistema
+
+    //Lectura por teclado
+    printf("Ingrese los coeficientes y términos independientes del sistema:\n");
+    printf("Ecuación 1 (ax + by + cz = d): ");
+    scanf("%f %f %f %f", &a1, &b1, &c1, &d1);
+    printf("Ecuación 2 (ax + by + cz = d): ");
+    scanf("%f %f %f %f", &a2, &b2, &c2, &d2);
+    printf("Ecuación 3 (ax + by + cz = d): ");
+    scanf("%f %f %f %f", &a3, &b3, &c3, &d3);
+
+    //Cálculo de los determinantes
+    det = a1 * (b2 * c3 - b3 * c2) - b1 * (a2 * c3 - a3 * c2) + c1 * (a2 * b3 - a3 * b2);
+    det_x = d1 * (b2 * c3 - b3 * c2) - b1 * (d2 * c3 - d3 * c2) + c1 * (d2 * b3 - d3 * b2);
+    det_y = a1 * (d2 * c3 - d3 * c2) - d1 * (a2 * c3 - a3 * c2) + c1 * (a2 * d3 - a3 * d2);
+    det_z = a1 * (b2 * d3 - b3 * d2) - b1 * (a2 * d3 - a3 * d2) + d1 * (a2 * b3 - a3 * b2);
+
+    //Comprobar si el sistema tiene solución única o no
+    if (det != 0) {
+        // Calcular las soluciones
+        x = det_x / det;
+        y = det_y / det;
+        z = det_z / det;
+
+        //Impresión soluciones
+        printf("El sistema tiene solución única:\n");
+        printf("x = %.2f\n", x);
+        printf("y = %.2f\n", y);
+        printf("z = %.2f\n", z);
+    } else {
+        printf("ERROR: El sistema no tiene solución única.\n");
+    }
+
+    return 0;
+}
