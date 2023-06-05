@@ -48,5 +48,28 @@ _______________
 
 | Ejercicio/Apartado   |  Fecha de inicio |Finalizado|Calificación |
 | ----------- | ---------------- |--------- |-------------|
-| 1           |                  | [ ]      |[0,1,2,3]         |
+| 1           |                  | [X]      |[0,1,2,3]         |
+________________
 
+_______________
+## Trabajo individual 7
+
+| Ejercicio/Apartado   |  Fecha de inicio |Finalizado|Calificación |
+| ----------- | ---------------- |--------- |-------------|
+| 1           |                  | [X]      |[0,1,2,3]         |
+________________
+
+_______________
+## Trabajo individual 8
+
+| Ejercicio/Apartado   |  Fecha de inicio |Finalizado|Calificación |
+| ----------- | ---------------- |--------- |-------------|
+| 1           |                  | [X]      |[0,1,2,3]         |
+________________
+
+_______________
+## Trabajo individual 9
+
+| Ejercicio/Apartado   |  Fecha de inicio |Finalizado|Calificación |
+| ----------- | ---------------- |--------- |-------------|
+| 1           |                  | [X]      |[0,1,2,3]         |
